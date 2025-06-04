@@ -24,12 +24,12 @@ const Skills = () => {
   return (
     <section className="bg-theme-color text-white px-4 pt-6 pb-12">
       <div className="max-w-6xl mx-auto">
-        <div className="flex items-center justify-end mb-6">
-          <h2 className="text-3xl md:text-4xl font-bold text-orange-500 font-mono mr-4">
-            Skills & Technologies
-          </h2>
-          <div className="h-px w-12 bg-orange-500" />
-        </div>
+       <div className="flex items-center mb-6">
+  <div className="w-[15%] sm:w-[30%] lg:w-[50%] h-px bg-white" />
+  <h2 className="w-[85%] hidden:sm:w-[70%] lg:w-[50%] text-3xl md:text-4xl font-bold text-orange-500 font-mono text-right pl-4">
+    Skills & Technologies
+  </h2>
+</div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           <SkillCard
