@@ -22,7 +22,7 @@ const SkillCard = ({ title, techs, icons }) => (
 
 const Skills = () => {
   return (
-    <section className="bg-theme-color text-white px-4 py-16">
+    <section className="bg-theme-color text-white px-4 pt-6 pb-12">
       <div className="max-w-6xl mx-auto">
         <div className="flex items-center justify-end mb-6">
           <h2 className="text-3xl md:text-4xl font-bold text-orange-500 font-mono mr-4">
