@@ -10,6 +10,7 @@ export default {
         'theme-color' : '#1A1A1A',
         'secondary-theme' : '#FE7F0F',
         'primary-theme' : '#F2F2F2',
+        'blue-theme' : '#4B607F',
       }
     },
   },
