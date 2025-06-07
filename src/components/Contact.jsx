@@ -55,30 +55,30 @@ const Contact = () => {
           </div>
 
           {/* Right Form */}
-          <form className="flex flex-col gap-4 font-mono">
+          <form className="flex flex-col gap-6 font-mono bg-blue-theme/30 backdrop-blur-md p-8 rounded-xl border border-gray-500/20">
             <input
               type="text"
-              placeholder="Full Name"
-              className="p-3 rounded-xl bg-gray-300 text-black"
+              placeholder="Name"
+              className="w-full p-3 bg-transparent border-b border-gray-400 text-text-theme-color placeholder-gray-400 focus:outline-none focus:border-orange-400 transition"
             />
             <input
               type="email"
-              placeholder="Email Address"
-              className="p-3 rounded-xl bg-gray-300 text-black"
+              placeholder="Email"
+              className="w-full p-3 bg-transparent border-b border-gray-400 text-text-theme-color placeholder-gray-400 focus:outline-none focus:border-orange-400 transition"
             />
             <input
               type="text"
               placeholder="Subject"
-              className="p-3 rounded-xl bg-gray-300 text-black"
+              className="w-full p-3 bg-transparent border-b border-gray-400 text-text-theme-color placeholder-gray-400 focus:outline-none focus:border-orange-400 transition"
             />
             <textarea
-              rows={5}
-              placeholder="Your Message"
-              className="p-3 rounded-xl bg-gray-300 text-black"
+              rows={4}
+              placeholder="Message"
+              className="w-full p-3 bg-transparent border-b border-gray-400 text-text-theme-color placeholder-gray-400 focus:outline-none focus:border-orange-400 transition resize-none"
             ></textarea>
             <button
               type="submit"
-              className="bg-orange-500 hover:bg-orange-400 text-black font-bold py-3 rounded-xl transition"
+              className="mt-2 bg-transparent border-2 border-orange-400 text-orange-400 hover:bg-orange-400 hover:text-text-theme-color font-medium py-2 rounded-lg transition duration-300"
             >
               Send Message
             </button>

@@ -2,19 +2,19 @@ import React from "react";
 
 const Experiences = () => {
   return (
-    <section className="bg-theme-color text-white px-4 pt-8">
+    <section className="bg-theme-color text-text-theme-color px-4 pt-8 pb-6">
       <div className="max-w-6xl mx-auto">
         {/* Title & line layout */}
         <div className="flex items-center mb-6">
           <h2 className="w-1/2 md:w-1/4 text-3xl md:text-4xl font-bold text-orange-500 font-mono">
             Experience
           </h2>
-          <div className="w-1/2 md:w-3/4 h-px bg-white" />
+          <div className="w-1/2 md:w-3/4 h-px bg-text-theme-color" />
         </div>
 
         {/* Experience content */}
         <div className="space-y-8">
-          <div className="bg-blue-theme p-6 rounded-xl">
+          <div className="bg-blue-theme/30 backdrop-blur-md p-6 rounded-xl border border-gray-500/20">
             <h3 className="text-xl font-bold font-mono mb-2">Freelance Web Developer</h3>
             <p className="text-text-theme-color font-mono mb-4">Self-Employed | Jan 2024 – Present</p>
             <ul className="list-disc ml-5 space-y-3 text-text-theme-color font-mono">
