@@ -59,22 +59,22 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Name"
-              className="w-full p-3 bg-transparent border-b border-gray-400 text-text-theme-color placeholder-gray-400 focus:outline-none focus:border-orange-400 transition"
+              className="w-full p-3 bg-transparent border-b border-gray-400 text-text-theme-color placeholder-gray-400 focus:outline-none focus:border-orange-400 transition appearance-none"
             />
             <input
               type="email"
               placeholder="Email"
-              className="w-full p-3 bg-transparent border-b border-gray-400 text-text-theme-color placeholder-gray-400 focus:outline-none focus:border-orange-400 transition"
+              className="w-full p-3 bg-transparent border-b border-gray-400 text-text-theme-color placeholder-gray-400 focus:outline-none focus:border-orange-400 transition appearance-none"
             />
             <input
               type="text"
               placeholder="Subject"
-              className="w-full p-3 bg-transparent border-b border-gray-400 text-text-theme-color placeholder-gray-400 focus:outline-none focus:border-orange-400 transition"
+              className="w-full p-3 bg-transparent border-b border-gray-400 text-text-theme-color placeholder-gray-400 focus:outline-none focus:border-orange-400 transition appearance-none"
             />
             <textarea
               rows={4}
               placeholder="Message"
-              className="w-full p-3 bg-transparent border-b border-gray-400 text-text-theme-color placeholder-gray-400 focus:outline-none focus:border-orange-400 transition resize-none"
+              className="w-full p-3 bg-transparent border-b border-gray-400 text-text-theme-color placeholder-gray-400 focus:outline-none focus:border-orange-400 transition resize-none appearance-none"
             ></textarea>
             <button
               type="submit"
