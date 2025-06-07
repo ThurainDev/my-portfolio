@@ -3,7 +3,7 @@ import ProfilePic from '../assets/111.png'; // Update path if needed
 
 const Hero = () => {
   return (
-    <section id="hero" className="bg-theme-color text-white px-4 pt-12 pb-8 md:pb-10">
+    <section id="hero" className="bg-theme-color text-white px-4 pt-24 pb-8 md:pt-32 md:pb-10">
       <div className="max-w-6xl mx-auto flex flex-col-reverse md:flex-row items-center justify-between gap-10">
 
         {/* Left: Text Content (shown below image on mobile) */}
