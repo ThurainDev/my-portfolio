@@ -22,7 +22,7 @@ const SkillCard = ({ title, techs, icons }) => (
 
 const Skills = () => {
   return (
-    <section className="bg-theme-color text-white px-4 pt-6 pb-12">
+    <section id="skills" className="bg-theme-color text-white px-4 pt-6 pb-12">
       <div className="max-w-6xl mx-auto">
        <div className="flex items-center mb-6">
   <div className="w-[15%] sm:w-[30%] lg:w-[50%] h-px bg-white" />

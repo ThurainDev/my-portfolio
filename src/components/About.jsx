@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
   return (
-    <section className="bg-theme-color text-white px-4 pt-8 pb-4">
+    <section id="about" className="bg-theme-color text-white px-4 pt-8 pb-4">
       <div className="max-w-6xl mx-auto">
         {/* Title & line layout */}
         <div className="flex items-center mb-6">
@@ -12,7 +12,7 @@ const About = () => {
           <div className="w-1/2 md:w-3/4 h-px bg-white" />
         </div>
         <p className="text-gray-300 text-base md:text-lg font-mono leading-relaxed">
-          I’m a self-driven and detail-oriented MERN Stack Developer with a passion for building
+          I'm a self-driven and detail-oriented MERN Stack Developer with a passion for building
           modern web applications that solve real-world problems. I specialize in working with
           MongoDB, Express.js, React, and Node.js to create full-stack solutions that are scalable,
           responsive, and efficient.

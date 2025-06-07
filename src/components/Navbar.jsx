@@ -3,19 +3,28 @@ import React, { useState } from 'react';
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const scrollToSection = (sectionId) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+      setIsOpen(false);
+    }
+  };
+
   return (
-    <nav className="w-full bg-theme-color text-white px-4 py-3">
+    <nav className="w-full bg-theme-color text-white px-4 py-3 fixed top-0 z-50">
       <div className="max-w-6xl mx-auto bg-primary-theme rounded-full px-6 py-3 flex justify-between items-center shadow-md">
         {/* Logo */}
-        <h1 className="text-2xl font-bold text-theme-color">THURAIN.DEV</h1>
+        <h1 className="text-2xl font-bold text-theme-color cursor-pointer" onClick={() => scrollToSection('hero')}>THURAIN.DEV</h1>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex space-x-6 text-theme-color font-mono uppercase text-sm">
-          <li className="text-secondary-theme font-bold cursor-pointer">Home</li>
-          <li className="hover:text-secondary-theme cursor-pointer">About</li>
-          <li className="hover:text-secondary-theme cursor-pointer">Projects</li>
-          <li className="hover:text-secondary-theme cursor-pointer">Experience</li>
-          <li className="hover:text-secondary-theme cursor-pointer">Contact</li>
+          <li className="text-secondary-theme font-bold cursor-pointer" onClick={() => scrollToSection('hero')}>Home</li>
+          <li className="hover:text-secondary-theme cursor-pointer" onClick={() => scrollToSection('about')}>About</li>
+          <li className="hover:text-secondary-theme cursor-pointer" onClick={() => scrollToSection('skills')}>Skills</li>
+          <li className="hover:text-secondary-theme cursor-pointer" onClick={() => scrollToSection('projects')}>Projects</li>
+          <li className="hover:text-secondary-theme cursor-pointer" onClick={() => scrollToSection('experience')}>Experience</li>
+          <li className="hover:text-secondary-theme cursor-pointer" onClick={() => scrollToSection('contact')}>Contact</li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -32,21 +41,21 @@ const Navbar = () => {
         </div>
       </div>
 
-     {/* Mobile Animated Dropdown Menu */}
-<div
-  className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
-    isOpen ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0 mt-0'
-  }`}
->
-  <ul className="bg-primary-theme rounded-md py-3 px-4 space-y-3 text-theme-color font-mono uppercase text-sm">
-    <li onClick={() => setIsOpen(false)} className="text-secondary-theme font-bold cursor-pointer">Home</li>
-    <li onClick={() => setIsOpen(false)} className="hover:text-secondary-theme cursor-pointer">About</li>
-    <li onClick={() => setIsOpen(false)} className="hover:text-secondary-theme cursor-pointer">Skills</li>
-    <li onClick={() => setIsOpen(false)} className="hover:text-secondary-theme cursor-pointer">Projects</li>
-    <li onClick={() => setIsOpen(false)} className="hover:text-secondary-theme cursor-pointer">Experience</li>
-    <li onClick={() => setIsOpen(false)} className="hover:text-secondary-theme cursor-pointer">Contact</li>
-  </ul>
-</div>
+      {/* Mobile Animated Dropdown Menu */}
+      <div
+        className={`md:hidden overflow-hidden transition-all duration-500 ease-in-out ${
+          isOpen ? 'max-h-96 opacity-100 mt-3' : 'max-h-0 opacity-0 mt-0'
+        }`}
+      >
+        <ul className="bg-primary-theme rounded-md py-3 px-4 space-y-3 text-theme-color font-mono uppercase text-sm">
+          <li onClick={() => scrollToSection('hero')} className="text-secondary-theme font-bold cursor-pointer">Home</li>
+          <li onClick={() => scrollToSection('about')} className="hover:text-secondary-theme cursor-pointer">About</li>
+          <li onClick={() => scrollToSection('skills')} className="hover:text-secondary-theme cursor-pointer">Skills</li>
+          <li onClick={() => scrollToSection('projects')} className="hover:text-secondary-theme cursor-pointer">Projects</li>
+          <li onClick={() => scrollToSection('experience')} className="hover:text-secondary-theme cursor-pointer">Experience</li>
+          <li onClick={() => scrollToSection('contact')} className="hover:text-secondary-theme cursor-pointer">Contact</li>
+        </ul>
+      </div>
     </nav>
   );
 };

@@ -2,7 +2,7 @@ import React from "react";
 
 const Experiences = () => {
   return (
-    <section className="bg-theme-color text-text-theme-color px-4 pt-8 pb-6">
+    <section id="experience" className="bg-theme-color text-text-theme-color px-4 pt-8 pb-6">
       <div className="max-w-6xl mx-auto">
         {/* Title & line layout */}
         <div className="flex items-center mb-6">

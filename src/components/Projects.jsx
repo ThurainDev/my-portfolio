@@ -81,7 +81,7 @@ const Projects = () => {
   const selected = projects[selectedIndex];
 
   return (
-    <section className="px-4 pt-4 pb-6 text-white bg-theme-color">
+    <section id="projects" className="px-4 pt-4 pb-6 text-white bg-theme-color">
       <div className="max-w-6xl mx-auto">
         {/* Title with Responsive Line */}
         <div className="flex items-center gap-4 mb-8">

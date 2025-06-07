@@ -12,6 +12,10 @@ export default {
         'primary-theme' : '#F2F2F2',
         'blue-theme' : '#4B607F',
         'text-theme-color' : '#F2F2F2',
+      },
+      fontFamily: {
+        'mono': ['JetBrains Mono', 'monospace'],
+        'burmese': ['Padauk', 'sans-serif'],
       }
     },
   },
