@@ -11,6 +11,7 @@ export default {
         'secondary-theme' : '#FE7F0F',
         'primary-theme' : '#F2F2F2',
         'blue-theme' : '#4B607F',
+        'text-theme-color' : '#F2F2F2',
       }
     },
   },
