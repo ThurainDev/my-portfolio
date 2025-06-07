@@ -59,26 +59,26 @@ const Contact = () => {
             <input
               type="text"
               placeholder="Full Name"
-              className="p-3 rounded bg-gray-300 text-black"
+              className="p-3 rounded-xl bg-gray-300 text-black"
             />
             <input
               type="email"
               placeholder="Email Address"
-              className="p-3 rounded bg-gray-300 text-black"
+              className="p-3 rounded-xl bg-gray-300 text-black"
             />
             <input
               type="text"
               placeholder="Subject"
-              className="p-3 rounded bg-gray-300 text-black"
+              className="p-3 rounded-xl bg-gray-300 text-black"
             />
             <textarea
               rows={5}
               placeholder="Your Message"
-              className="p-3 rounded bg-gray-300 text-black"
+              className="p-3 rounded-xl bg-gray-300 text-black"
             ></textarea>
             <button
               type="submit"
-              className="bg-orange-500 hover:bg-orange-400 text-black font-bold py-3 rounded transition"
+              className="bg-orange-500 hover:bg-orange-400 text-black font-bold py-3 rounded-xl transition"
             >
               Send Message
             </button>
